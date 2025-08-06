@@ -1,5 +1,8 @@
 import React from 'react'
-import Quiz from "./components/Quiz"
+// src/App.jsx ke andar import is tarah hona chahiye:
+import Quiz from "./components/Quiz";
+
+
 const App = () => {
   return (
     <>
