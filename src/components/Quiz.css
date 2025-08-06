@@ -1,60 +1,97 @@
-.container{
-    width: 600px;
-    /* height: 350px; */
-    margin: auto ;
-    margin-top: 100px;
-    padding: 40px 15px;
-    border-radius: 20px ;
-    border: 4px solid wheat;
-    gap: 5px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: rgb(156, 103, 148);
-    color: black;
-    
+/* Quiz.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #8360c3, #2ebf91);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
 }
-.container hr{
-    border: none;
-    height: 2px;
-    background: greenyellow;
+
+.container {
+  max-width: 700px;
+  margin: 80px auto;
+  padding: 40px;
+  border-radius: 20px;
+  background-color: #fff;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
 }
-.container h2{
-    font-size: 24px;
-    font-family: 600;
+
+.container h1 {
+  font-size: 36px;
+  color: #2c3e50;
+  margin-bottom: 10px;
 }
-.container ul li{
-    display: flex;
-    align-items: center;
-    height: 30px;
-    width: 70vh;
-    border: 2px solid rgb(29, 27, 27);
-    border-radius: 10px;
-    padding: 5px;
-    margin: 15px;
-    font-size: 17px bold;
-    background-color: aliceblue;
-    font-style: italic bold;
+
+.container hr {
+  border: none;
+  height: 3px;
+  background: #00c9a7;
+  width: 100%;
 }
-.container button{
-    margin: auto;
-    padding: 5px;
-    height: 42px;
-    width: 90px;
-    background-color: rgb(25, 25, 114);
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 15px;
-    font-size: 20px;
-    border-color: aliceblue;
+
+.container h2 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #34495e;
+  text-align: center;
 }
-.container .correct{
-  background: rgb(167, 249, 167);
-  border: 2.5px solid rgb(20, 43, 20);
+
+.container ul {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
 }
-.container .wrong{
-  background: rgb(230, 162, 162);
-  border: 2.5px solid rgb(124, 40, 40);
+
+.container ul li {
+  background-color: #f1f1f1;
+  padding: 15px 20px;
+  margin: 12px 0;
+  border-radius: 12px;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: 0.3s ease;
+  font-size: 18px;
+}
+
+.container ul li:hover {
+  background-color: #e0f7fa;
+  border-color: #00bcd4;
+}
+
+.container button {
+  padding: 12px 24px;
+  font-size: 16px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.container button:hover {
+  background-color: #2980b9;
+}
+
+.index {
+  font-size: 16px;
+  color: #555;
+  margin-top: 10px;
+}
+
+.container .correct {
+  background-color: #d4edda;
+  border-color: #28a745;
+  color: #155724;
+}
+
+.container .wrong {
+  background-color: #f8d7da;
+  border-color: #dc3545;
+  color: #721c24;
 }
